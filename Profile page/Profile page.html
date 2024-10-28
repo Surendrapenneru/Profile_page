@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penneru Naga Surendra Babu - Profile</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+            display: block;
+            animation: profile-bounce 1.5s ease-in-out infinite;
+        }
+
+        @keyframes profile-bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: orange;
+            text-shadow: 0 0 10px rgba(255, 140, 0, 0.8);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid orange;
+            padding-bottom: 10px;
+            text-align: center;
+            animation: slide-down 1s ease-out;
+        }
+
+        /* Education Section */
+        .education-item {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            opacity: 0;
+            animation: fade-in 1.5s ease forwards;
+        }
+
+        .education-item:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .education-item:nth-child(3) {
+            animation-delay: 1s;
+        }
+
+        .education-image {
+            width: 120px;
+            height: 90px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animations */
+        @keyframes slide-down {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .education-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .education-image {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: orange;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="1074426.jpg" alt="Profile Image" class="profile-image">
+        <h1>Penneru Naga Surendra Babu</h1>
+        <p>Email: pnsurendrababu@gmail.com</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+        </ul>
+    </nav>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <img src="gec.jpg" alt="Seshadri Rao Gudlavalleru Engineering College" class="education-image">
+            <p><strong>Seshadri Rao Gudlavalleru Engineering College</strong><br>
+                B. Tech in Computer Science Engineering (2020 – 2024)<br>
+                CGPA: 8.51 / 10
+            </p>
+        </div>
+
+        <div class="education-item">
+            <img src="narayana.png" alt="Narayana Junior College" class="education-image">
+            <p><strong>Narayana Junior College</strong><br>
+                Intermediate - AP State Board (Graduated May 2020)<br>
+                CGPA: 8.8 / 10
+            </p>
+        </div>
+
+        <div class="education-item">
+            <img src="narayana.png" alt="Narayana (E.M) School" class="education-image">
+            <p><strong>Narayana (E.M) School</strong><br>
+                SSC - AP State Board (Graduated April 2018)<br>
+                CGPA: 9.3 / 10
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><b>Programming:</b> Python, Java, C</li>
+            <li><b>Technologies:</b> HTML, CSS, JavaScript</li>
+            <li><b>Database:</b> SQL, MongoDB</li>
+            <li><b>Soft Skills:</b> Strong analytical and problem-solving skills, communication, and teamwork</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><b>IoT-Based Vehicle Safety Framework:</b> Utilizes eye-blink detection, alcohol sensing, and GPS tracking to enhance vehicle safety.</li>
+            <li><b>Face and Signature Detection:</b> An OpenCV and OCR utility for automated identity verification.</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li><b>Brain O Vision Summer Internship</b> - AWS (May 2022 - June 2022): Gained experience in AWS fundamentals, creating Windows and Linux instances.</li>
+            <li><b>Ethical Hacking Workshop</b> (Nov 2022): Learned about cyber threats, SQL injection, Keyloggers, and more.</li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Azure Fundamentals | Microsoft</li>
+            <li>Introduction to Cybersecurity | Cisco Networking Academy</li>
+            <li>Java Full Stack | Wipro TalentNext</li>
+            <li>Introduction to Cloud Computing | Mindluster</li>
+            <li>Software Testing | Swayam</li>
+            <li>Python, Java, SQL (Basics) | HackerRank</li>
+        </ul>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Photography</li>
+            <li>Cricket</li>
+            <li>Travelling</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>GitHub: <a href="https://github.com/Surendrapenneru">github.com/Surendrapenneru</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/surendrapenneru/">linkedin.com/in/surendrapenneru</a></p>
+    </footer>
+</body>
+
+</html>
